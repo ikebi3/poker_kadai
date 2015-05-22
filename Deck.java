@@ -22,5 +22,20 @@ public class Deck {
 			cards[index] = tmp;
 		}
 	}
+	
+	public boolean reshuffle() {
+		
+		return false;
+		
+	}
+	
+	public int deal() {
+		
+		return -1;
+	}
+	
+	public void discard(int a) {
+		
+	}
 
 }
