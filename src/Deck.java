@@ -1,6 +1,9 @@
 public class Deck {
 
 	private int[] cards = new int[52];
+	private int[] dcards = new int[52];
+	private int count = 0;
+	private int dcount = 0;
 
 	Deck() {
 
@@ -22,20 +25,22 @@ public class Deck {
 			cards[index] = tmp;
 		}
 	}
-	
+
 	public boolean reshuffle() {
-		
+
 		return false;
-		
+
 	}
-	
+
 	public int deal() {
-		
-		return -1;
+
+		return cards[count++];
 	}
-	
+
 	public void discard(int a) {
-		
+
+		dcards[dcount++] = a;
+
 	}
 
 }
